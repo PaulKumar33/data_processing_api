@@ -24,6 +24,10 @@ if(process.env.NODE_ENV === 'development'){
 app.use(express.json());
 app.use(express.static(`${__dirname}/public`));
 
+const _path = require('path')
+global.mainRoot = _path.resolve(__dirname);
+
+
 app.use('/mainpage', viewRoute)
 
 module.exports = app;

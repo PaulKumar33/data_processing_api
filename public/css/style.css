@@ -2,3 +2,8 @@
     margin: 0px;
     overflow: hidden;
 }
+
+.lines{
+    stroke: #23f48d;
+    stroke-width: round;
+}

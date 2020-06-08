@@ -3,6 +3,7 @@ html
     header
         title peepeepoopoo
         link(rel='stylesheet' href='./public/css/style.css')
+        <script src='https://unpkg.com/browse/d3@5.7.0/dist/d3.min.js'></script>
     
     body.body
         h1  Mark's gay with SVG and CSS
@@ -10,11 +11,11 @@ html
         //- svg(width='960' height='500')
         //-     circle
         //-         r='100'
-        <svg width='960' height='1000'>
-            <g transform="translate(0, 50)">
-                <circle cx='300' cy='200' r='50' fill='blue'></circle>
-                <circle cx='500' cy='200' r='50' fill='blue'></circle>
-            </g>
+        <svg width='960' height='1000'></svg>
+        <script>
+            const svg = d3.select('svg');
+            svg.style('background-color', 'red');
+            
+        </script>
 
-            <line x1='200' y1='100' x2='300' y2='50' stroke='black'></line>
-        </svg>
+        
